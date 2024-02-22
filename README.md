@@ -42,7 +42,8 @@ plt.plot(X,y_predicted,color='red')
 plt.show()
 ```
 ## Output:
-![best fit line](sam.png)
+![Screenshot 2024-02-22 153217](https://github.com/Sanafathima95773/Find-the-best-fit-line-using-Least-Squares-Method/assets/147084627/daf5fd2d-d673-4d9e-8157-e1e5787cfbf7)
+![Screenshot 2024-02-22 152935](https://github.com/Sanafathima95773/Find-the-best-fit-line-using-Least-Squares-Method/assets/147084627/25380092-49c7-4b40-add6-3f6caf425dd4)
 
 
 ## Result:
