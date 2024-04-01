@@ -18,33 +18,37 @@ To implement univariate Linear Regression to fit a straight line using least squ
 
 ## Program:
 ```/*
+/*
 Program to implement univariate Linear Regression to fit a straight line using least squares.
 Developed by: Sana Fathima H
-RegisterNumber: 212223240145
+RegisterNumber:  212223240145
 */
 import numpy as np
 import matplotlib.pyplot as plt
-X = np.array(eval(input()))
-Y = np.array(eval(input()))
-X_mean = np.mean(X)
-Y_mean = np.mean(Y)
-num,denom=0,0
-for i in range(len(X)):
-  num+= (X[i]-X_mean)*(Y[i]-Y_mean)
-  denom+= (X[i]-X_mean)**2
-m = num/denom
-b = Y_mean - m*X_mean
-print(m,b)
-y_predicted=m*X+b
-print(y_predicted)
-plt.scatter(X,Y)
-plt.plot(X,y_predicted,color='red')
+x=np.array([2,9,5,5,3,7,1,8,6,2])
+y=np.array([69,98,82,77,71,84,55,94,84,64])
+xbar=np.mean(x)
+ybar=np.mean(y)
+num=0
+den=0
+for i in range(len(x)):
+    num+=(x[i]-xbar)*(y[i]-ybar)
+    den+=(x[i]-xbar)**2
+b0=num/den
+b1=ybar-m*xbar
+print(b0,b1)
+ynew=b0*x+b1
+print(ynew)
+plt.scatter(x,y,color='Green')
+plt.plot(x,ynew,color='Red')
 plt.show()
+print("Equation: y=b0+b1(X) \n          y= 55.05+4.7(X)")
 ```
 
 ## Output:
+![image](https://github.com/Sanafathima95773/Find-the-best-fit-line-using-Least-Squares-Method/assets/147084627/413613b2-23c7-453f-a004-01dc1d197377)
 
-![image](https://github.com/Sanafathima95773/Find-the-best-fit-line-using-Least-Squares-Method/assets/147084627/ac91b4e2-4847-41be-bcde-84d1c30fe7d8)
+
 
 ## Result:
 
